@@ -26,9 +26,8 @@ def dictionary_from_lists(keys, values):
 	# dictionnary.keys() --> dict_key avec les clé du dict __> list() pour convertir
 
 def get_greatest_values(dictionnary, num_values):
-	# return sorted([n[1] for n in dictionnary.items()], reverse=True )[0:num_values]
-	return sorted(dictionnary.values())[0:num_values]
-	
+	return sorted([n[1] for n in dictionnary.items()], reverse=True )[0:num_values]
+
 def get_sum_values_from_key(dictionnaries, key):
 
 	return sum([d[key] for d in dictionnaries if key in d])
